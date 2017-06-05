@@ -30,15 +30,16 @@ public class OrderRepo{
         return null;
     }
     public void addProduct(Product product){
-        prods.add(products);
+        prods.add(product);
     }
     public List<Product> getAllProds(){
-        List<Product> prods;
+        List<Product> ps;
             for (Order o : orders){
                 for (Product p : o.getProducts()){
-                    prods.add(p);
+                    ps.add(p);
                 }
             }
+            return ps;
     }
     public void addCustomer(Customer customer){
         customers.add(customer);
