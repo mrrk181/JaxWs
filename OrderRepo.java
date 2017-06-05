@@ -7,6 +7,9 @@ public class OrderRepo{
 
     private List<Customer> customers;
     private OrderRepo(){
+        orders = new ArrayList<Order>();
+        prods= new ArrayList<Product>();
+        customers= new ArrayList<Customer>();
 
     }
     public static OrderRepo Instantiate(){
@@ -33,7 +36,7 @@ public class OrderRepo{
         prods.add(product);
     }
     public List<Product> getAllProds(){
-        List<Product> ps;
+        List<Product> ps = new ArrayList<Product>();
             for (Order o : orders){
                 for (Product p : o.getProducts()){
                     ps.add(p);
