@@ -18,6 +18,9 @@ public class OrderRepo{
         }
         return repo;
     }
+    public List<Order> getAllOrders(){
+        return orders;
+    }
     public void addOrder(Order order){
         orders.add(order);
     }

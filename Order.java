@@ -5,7 +5,6 @@ public class Order{
     private Customer customer;
     private List<Product> products;
     public Order(int id){
-
         this.id=id;
         products = new ArrayList<Product>();
     }
