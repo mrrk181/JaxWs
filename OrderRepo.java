@@ -1,3 +1,4 @@
+import java.util.*;
 public class OrderRepo{
 
     private static OrderRepo repo;
@@ -8,7 +9,7 @@ public class OrderRepo{
     private OrderRepo(){
 
     }
-    public OrderRepo Instantiate(){
+    public static OrderRepo Instantiate(){
         if(repo==null){
             repo = new OrderRepo();
         }
@@ -27,6 +28,9 @@ public class OrderRepo{
             }
         }
         return null;
+    }
+    public void addProduct(Product product){
+        prods.add(products);
     }
     public List<Product> getAllProds(){
         List<Product> prods;

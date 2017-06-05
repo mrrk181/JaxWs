@@ -4,9 +4,8 @@ public class Order{
     private double total;
     private Customer customer;
     private List<Product> products;
-    public Order(Customer customer, int id){
+    public Order(int id){
         this.id=id;
-        this.customer = customer;
     }
     public void purchaseProduct(Product product){
         products.add(product);
