@@ -45,12 +45,23 @@ public class OrderRepo{
                     ps.add(p);
                 }
             }
+            for (Product _p : prods){
+                ps.add(_p);
+            }
             return ps;
     }
     public void addCustomer(Customer customer){
         customers.add(customer);
     }
     public List<Customer> getAllCustm(){
-        return customers;
+        List<Customer> c = new ArrayList<Customer>();
+        for (Order o : orders){
+            c.add(o.getCustomer());
+        }
+        for (Customer _c : customers){
+            c.add(_c);
+        }
+
+        return c;
     }
 }
