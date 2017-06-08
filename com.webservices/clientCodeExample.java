@@ -7,9 +7,8 @@ public class clientCodeExample{
 
         //1st argument service URI, refer to wsdl document above
     //2nd argument is service name, refer to wsdl document above
-        QName qname = new QName("http://somethingjustlikeme.com/ph", "WebServicesService");
+        QName qname = new QName("http://javatpoint.com/", "WebServices");
         Service service = Service.create(url, qname);
-        ServiceInterface hello = service.getPort(ServiceInterface.class);
-        System.out.println(hello.getAllCustm());
+        ServiceInterface hello = service.getPort(WebServices.class);
      }
  }

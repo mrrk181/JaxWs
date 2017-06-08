@@ -4,7 +4,7 @@ import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 import java.util.*;
 
-@WebService(portName="WebServicesPort")
+@WebService
 @SOAPBinding(style = Style.RPC)
 public interface ServiceInterface{
     @WebMethod

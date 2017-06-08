@@ -1,7 +1,7 @@
 import javax.jws.WebService;
 import java.util.*;
 
-@WebService(targetNamespace="http://somethingjustlikeme.com/ph", endpointInterface="WebServices", serviceName="WebServicesService", name ="WebServices")
+@WebService(endpointInterface = "WebServices")
 public class WebServices implements ServiceInterface{
     @Override
     public List<Order> getAllOrders(){
