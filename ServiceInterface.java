@@ -3,10 +3,15 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 import java.util.*;
+
+@WebService
+@SOAPBinding(style = Style.RPC)
 public interface ServiceInterface{
     @WebMethod
     public List<Order> getAllOrders();
 
+    @WebMethod
+    public Order getOrderById(int id);
     @WebMethod
     public void addOrder(Order order);
 

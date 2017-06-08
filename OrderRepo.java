@@ -38,7 +38,7 @@ public class OrderRepo{
     public void addProduct(Product product){
         prods.add(product);
     }
-    public List<Product> getAllProds(){
+    public List<Product> getAllProducts(){
         List<Product> ps = new ArrayList<Product>();
             for (Order o : orders){
                 for (Product p : o.getProducts()){
